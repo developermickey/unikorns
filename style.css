@@ -1,0 +1,201 @@
+@font-face {
+    font-family: 'Aeonik-Medium';
+    src: url(./fonts/Aeonik-Medium.woff2);
+}
+@font-face {
+    font-family: 'Aeonik-Regular';
+    src: url(./fonts/Aeonik-Regular.woff2);
+}
+@font-face {
+    font-family: 'Circular-Book';
+    src: url(./fonts/Circular-Book.woff2);
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html, body {
+    width: 100%;
+    height: 100%;
+    font-family: 'Aeonik-Regular';
+}
+#main {
+    width: 100%;
+    height: 100%;
+}
+#nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 14px;
+    z-index: 999;
+    color: #000000;
+}
+.sticky {
+    position: sticky;
+    top: 0px;
+    z-index: 1;
+}
+#nav .logo {
+    position: relative;
+}
+#nav .logo svg g path, #nav .logo svg path  {
+    fill: #000000 !important;
+}
+
+#nav .left {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 120px;
+}
+#nav .left p{
+    color: #2b2b2b80;
+}
+#nav .left p span{
+    color: #000000;
+}
+.menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+.base-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #000000;
+    border-radius: 50px;
+    cursor: pointer;
+}
+#main #page {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh; 
+    margin-left: auto;
+    margin-right: auto;
+}
+#main #page .pageContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 95%;
+    height: 100vh; 
+    margin-left: auto;
+    margin-right: auto;
+
+}
+#main #page .pageContainer .left {
+   color: #000000;
+    width: 50%;
+    position: relative;
+}
+#main #page .pageContainer .left h2{
+   
+    display: unset;
+    font-size: 5.95vw;
+    position: relative;
+    top: -100px;
+    font-family: 'Aeonik-Regular';
+}
+
+#main #page .pageContainer  .left h2>span{
+    color: rgba(0,0,0,.3);
+    font-family: 'Aeonik-Regular';
+}
+
+#main #page .pageContainer  .right {
+    color: #000000;
+    width: 50%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+#main #page .pageContainer .right p {
+    font-size: 24px;
+    font-family: 'Aeonik-Medium';
+    position: relative;
+    right: -260px;
+    top: 20px;
+} 
+.userInfo {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+
+}
+.userImg {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 60px;
+    gap: 50px;
+}
+.userImg .imgsss img {
+    width: 60px;
+    height: 60px;
+    border: none;
+    border-radius: 50px;
+}
+.watch {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+.watch .base-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #000000;
+    border-radius: 50px;
+    cursor: pointer;
+    background-color: #000000;
+}
+.serviceSection {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: relative;
+    top: -80px;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.serviceContainer {
+    border: none;
+    border-top: 2px solid #858585;
+    width: 25%;
+    text-align: center;
+    padding: 20px;
+    border-left: 2px solid #858585;
+}
+.serviceContainer:first-child {
+    border: none;
+    border-top: 2px solid #858585;
+    width: 25%;
+    text-align: center;
+    padding: 20px;
+    border-left: 2px solid #858585;
+    border-top-left-radius: 1000px 1000px;
+}
+
+.serviceContainer:last-child {
+    border: none;
+    border-top: 2px solid #858585;
+    width: 25%;
+    text-align: center;
+    padding: 20px;
+    border-left: 2px solid #858585;
+    border-right: 2px solid #858585;
+    border-top-right-radius: 1000px 1000px;
+}
